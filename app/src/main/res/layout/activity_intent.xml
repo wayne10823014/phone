@@ -88,10 +88,11 @@
             app:srcCompat="@drawable/autopilot" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/callwhairchairbt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="callWheelchair"
             app:srcCompat="@drawable/wifi" />
         <ImageView
             android:id="@+id/imageView7"

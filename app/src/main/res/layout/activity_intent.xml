@@ -79,12 +79,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:background="#f0f4fd"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/automovebt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:onClick="automove"
             android:layout_weight="1"
             app:srcCompat="@drawable/autopilot" />
@@ -94,6 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="10dp"
             android:onClick="callWheelchair"
             app:srcCompat="@drawable/wifi" />
         <ImageView
@@ -101,6 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="manual"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/tap" />
     </LinearLayout>

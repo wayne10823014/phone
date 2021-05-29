@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -24,10 +27,34 @@ public class AutomovesetActivity extends AppCompatActivity {
 //        videoView.setMediaController(mediaController);
         mediaController.setMediaPlayer(videoView);
         videoView.setMediaController(null);
+
+        Button button = findViewById(R.id.endbt);
+        button.setOnClickListener(new View.OnClickListener() { //點擊後執行跳頁的指令
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(AutomovesetActivity.this, intent.class);
+                startActivity(intent);
+            }
+        });
+        Button manualbtn = findViewById(R.id.manualbtn);
+        manualbtn.setOnClickListener(new View.OnClickListener() { //點擊後執行跳頁的指令
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(AutomovesetActivity.this, manualActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     public void stop(View v){
         VideoView videoView = findViewById(R.id.video_view);
         videoView.pause();
+        ImageView image = findViewById(R.id.targetimg);
+        image.setImageResource(R.drawable.target);
+//        dialog();
+    }
+    public void targetselect(View v){
         dialog();
     }
     private void dialog() {

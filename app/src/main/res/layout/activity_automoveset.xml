@@ -50,23 +50,38 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25dp"
-            android:layout_marginTop="70dp"
-            android:text="方向" />
+            android:layout_marginTop="0dp"
+            android:text="選擇跟隨目標" />
 
-        <com.kongqw.rockerlibrary.view.RockerView
-            android:id="@+id/rockerView"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center"/>
+        <VideoView
+            android:id="@+id/video_view"
+            android:onClick="stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/endbt"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:layout_gravity="center"
-            android:text="結束" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/endbt"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                android:text="結束" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                android:text="手動模式" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

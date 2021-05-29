@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.phone">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Phone">
-        <activity android:name=".AutomovesetActivity"></activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/shape_10dp_corners" />
+
+        <activity android:name=".AutomovesetActivity" />
         <activity android:name=".manualActivity" />
         <activity android:name=".intent" />
         <activity android:name=".MainActivity">

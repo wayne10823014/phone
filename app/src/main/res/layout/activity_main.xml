@@ -32,13 +32,18 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="50dp"
             android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/useraccount"
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
-                android:hint="email"
+                android:hint="Email"
                 android:maxLength="10"
-                android:textSize="20sp" />
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="300dp"
@@ -46,24 +51,29 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/userpassword"
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
                 android:ems="15"
-                android:hint="password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:maxLength="15"
-                android:textSize="20sp" />
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <Button
             android:id="@+id/btn"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Login"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:textSize="20sp" />
+            android:layout_marginTop="50dp"
+            android:text="login"
+            android:textSize="20sp"
+            app:backgroundTint="#145B7D" />
 
         <TextView
             android:id="@+id/textView"
@@ -92,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="50dp"
                 android:text="Create"
-                app:backgroundTint="#F469FD" />
+                app:backgroundTint="#c1cbd7" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

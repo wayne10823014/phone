@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C1CBD7"
     android:orientation="vertical">
 
     <LinearLayout
@@ -24,12 +25,14 @@
                 android:layout_width="250px"
                 android:layout_weight="1"
                 android:layout_height="250px"
-                android:src="@drawable/wheel_chair" />
+                android:src="@drawable/wheel_chair1" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:background="@xml/shape_10dp_corners"
             android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
@@ -37,32 +40,39 @@
                 android:id="@+id/useraccount"
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
-                android:hint="Email"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="30px"
+                android:hint="User Name"
                 android:maxLength="10"
+                android:scrollbarThumbHorizontal="@drawable/callimg"
                 android:selectAllOnFocus="false"
                 android:singleLine="false"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textColor="#145B7E"
+                android:textColorHint="#145B7E"
+                android:textSize="20sp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@xml/shape_10dp_corners"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/userpassword"
                 android:layout_width="300dp"
                 android:layout_height="match_parent"
+                android:drawableLeft="@drawable/lock2"
+                android:drawablePadding="30px"
                 android:ems="15"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:maxLength="15"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textColorHint="#145B7E"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <Button
@@ -80,7 +90,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:gravity="left"
+            android:textSize="15dp"
             android:text="Forgot password?" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="50dp"
                 android:text="Create"
-                app:backgroundTint="#c1cbd7" />
+                android:textColor="#0C0A0A"
+                app:backgroundTint="#ffffff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

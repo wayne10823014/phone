@@ -51,7 +51,7 @@ public class AutomovesetActivity extends AppCompatActivity {
         VideoView videoView = findViewById(R.id.video_view);
         videoView.pause();
         ImageView image = findViewById(R.id.targetimg);
-        image.setImageResource(R.drawable.target);
+        image.setImageResource(R.drawable.targectexample);
 //        dialog();
     }
     public void targetselect(View v){
@@ -68,7 +68,11 @@ public class AutomovesetActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
+                Intent intent = new Intent();
+                intent.setClass(AutomovesetActivity.this, Autoend.class);
+                startActivity(intent);
             }
+
         });
         builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
             @Override

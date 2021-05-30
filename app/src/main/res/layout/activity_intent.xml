@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="callsos"
-                android:src="@drawable/sos" />
+                android:src="@drawable/sosimg" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -44,7 +44,7 @@
                 android:layout_width="20px"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/setting"
+                android:src="@drawable/setimg"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -53,7 +53,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:layout_margin="20dp"
         android:background="@xml/shape_10dp_corners"
         android:orientation="vertical"
@@ -74,7 +74,7 @@
             android:layout_height="20dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Olivia. 45"
+            android:text="Olivia. 45y"
             android:textColor="#477E99"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -109,7 +109,7 @@
                     android:gravity="center"
                     android:text="95%"
                     android:textColor="#477E99"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -145,7 +145,7 @@
                     android:gravity="center"
                     android:text="20km"
                     android:textColor="#477E99"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -155,9 +155,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="200dp"
         android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
         android:background="@xml/shape_10dp_corners"
         android:orientation="horizontal"
@@ -240,6 +240,37 @@
                 android:textColor="#0B0707"
                 android:textStyle="bold" />
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="#FAFAFA"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/homeimg" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profileimg" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/searchimg" />
 
     </LinearLayout>
 

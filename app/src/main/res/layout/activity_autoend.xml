@@ -49,26 +49,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="25dp"
-            android:layout_marginTop="70dp"
-            android:text="方向" />
-
-        <com.kongqw.rockerlibrary.view.RockerView
-            android:id="@+id/rockerView"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center"/>
-
-        <Button
-            android:id="@+id/endbt"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center"
             android:layout_marginTop="200dp"
-            android:text="結束"
-            android:textSize="20sp"
-            app:backgroundTint="#145B7D" />
+            android:text="自動跟隨中"
+            android:textColor="#120C0C"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/endbt"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:text="結束"
+                android:textSize="20dp"
+                app:backgroundTint="#145B7D" />
+
+            <Button
+                android:id="@+id/manualbtn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="手動模式"
+                app:backgroundTint="#145B7D" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

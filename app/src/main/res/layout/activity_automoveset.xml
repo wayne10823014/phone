@@ -25,7 +25,7 @@
                 android:layout_weight="1"
                 android:onClick="callsos"
                 android:layout_height="match_parent"
-                android:src="@drawable/sos" />
+                android:src="@drawable/sosimg" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -40,7 +40,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:layout_height="match_parent"
-                android:src="@drawable/setting" />
+                android:src="@drawable/setimg" />
 
         </LinearLayout>
 
@@ -49,32 +49,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:text="選擇跟隨目標"
             android:textSize="25dp"
-            android:text="選擇跟隨目標" />
+            android:textStyle="bold" />
 
         <VideoView
             android:id="@+id/video_view"
-            android:onClick="stop"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="231dp"
+            android:layout_marginTop="10dp"
+            android:onClick="stop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:onClick="stop"
+            app:srcCompat="@drawable/yoloexample" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="目標顯示"
             android:textSize="20dp"
-            android:text="目標顯示" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/targetimg"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:onClick="targetselect"
-            app:srcCompat="@drawable/black" />
+            app:srcCompat="@drawable/aim" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,20 +94,24 @@
             <Button
                 android:id="@+id/endbt"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="25dp"
-                android:text="結束" />
+                android:layout_weight="1"
+                android:text="結束"
+                android:textSize="20dp"
+                app:backgroundTint="#145B7D" />
 
             <Button
                 android:id="@+id/manualbtn"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_margin="25dp"
-                android:text="手動模式" />
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="手動模式"
+                app:backgroundTint="#145B7D" />
         </LinearLayout>
     </LinearLayout>
 
